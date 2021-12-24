@@ -219,7 +219,8 @@
       top: 0;
       width: 100%;
       transition: all 300ms ease;
-  z-index: 10;
+      z-index: 10;
+      padding-right: 20vw;
   }
   .menu .logo{
       color:  white;
@@ -432,8 +433,386 @@ padding-bottom: 20px;
 }
 
 
+.phone123{
+  
+    position: fixed;
+    left:90vw;
+    z-index:5000;
+    text-align: center;
+  
+  }
+  
+  .ph_checkbox ,.ph_checkbox1,.ph_checkbox2 {
+      display: none;
+  }
 
+  .phIcon1  {
+      width: 60px;
+      height: 60px;
+      background-color:  white ;
+      border-radius: 50%;
+      text-align: center;
+      margin-bottom: 1vh;
+      margin-top: 1vw;
+      transition: all 400ms cubic-bezier(0.86, 0, 0.07, 1);
+      cursor: pointer;
+     display: block; 
+
+  }
+  .ic{
+      padding-top: 1vw;
+  }
+  .phIcon2,.phIcon3{
+      
+      display:none;
+  
+      width: 60px;
+      height: 60px;
+    
+      background-color:  white ;
+      border-radius: 50%;
+      text-align: center;
+      transition: all 400ms cubic-bezier(0.86, 0, 0.07, 1);
+      margin-bottom: 8px;
+      margin-right: 40px;
+      padding-top: 8px;
+      cursor: pointer;
+    
+  
+  }
+  .b {
+      position: fixed;
+      
+      width: 1vw;
+      height: 1vw;
+      border-radius: 50%;
+      opacity:0.9;
+      background:transparent;
+      background-size: cover;
+      background-position: center;
+      transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+      
+  }
+ 
+  .b1 {
+      
+      position: fixed;
+      opacity:0.9;
+    
+      width: 1vw;
+      height: 1vw;
+      border-radius: 50%;
+  
+      background:transparent;
+      background-size: cover;
+      background-position: center;
+      transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+      
+  }
+  
+  .cl ,.cl1{
+      position: absolute;
+      z-index:12;
+    top:2vw;
+    margin-right:2vw;
+    display: none; 
+      color:rgb(154, 147, 127);
+      cursor: pointer;
+      transition: 600ms;
+        
+  }
+  .cl:hover{
+      color:rgb(235, 191, 191);
+  }
+  .cl1:hover{
+      color:rgb(235, 191, 191);
+  }
+ 
+  
+  
+  .phIcon1:hover{
+      background-color:  #494235;
+      
+    }
+   
+  .phIcon2:hover{
+      background-color:  #494235;
+  
+    }
+  .phIcon3:hover{
+      background-color:  #494235;
+      
+  }
+  .ph_checkbox:checked ~.phIcon2 {
+    display: block;
+     
+
+  
+     
+  }
+  
+  .ph_checkbox:checked ~.phIcon3 {
+      display: block;    
+    
+   
+      
+      }
+            .ph_checkbox1:checked~.b{
+             background-color: black;
+            transform: scale(500);
+      }
+  .ph_checkbox1:checked~.cl{
+         display:block;
+       
+      }
+      .ph_checkbox1:checked~.phIcon2{
+          display:none;
+        
+       }
+       .ph_checkbox1:checked~.phIcon3{
+          display:none;
+        
+       }
+       .ph_checkbox1:checked~.phIcon{
+          display:none;
+        
+       }
+       .ph_checkbox1:checked~.call1{
+           display: block;
+        animation: fade_in_show 2s;
+        opacity: 1;
+ }
+ @keyframes fade_in_show {
+  0% {
+       opacity: 0;
+       transform: scale(0)
+  }
+
+  100% {
+       opacity: 1;
+       transform: scale(1)
+  }
+}
+
+      .ph_checkbox2:checked~.cl1{
+          display:block;
+          
+       }
+   
+  .ph_checkbox2:checked~.b1{
+          background-color:  black;
+        transform: scale(300);
+   }
+  
+   
+  
+   
+  .sub{
+      
+       font-weight: 500;
+      height: 50px;
+        width: 200px;
+        border-radius: 25px;
+       background: rgb(233, 191, 174);
+       border: 3px solid rgb(233, 191, 174);
+       color:black;
+       margin-right:2vw;   
+      } 
+      .sub:hover{
+          border-color: #696647;
+          background: #696647;
+          color:rgb(233, 191, 174);
+      } 
+      
+  #phone{
+      text-align: center;
+      height: 50px;
+      width: 200px;
+      border-radius: 25px;
+      background: transparent;
+      border: 3px solid rgb(233, 191, 174);
+      color:rgb(233, 191, 174);
+  }
+  .ic1{
+      padding:0.4vw;
+  }
+  .call1{
+      display:none;
+      text-align: center;
+      width: -30vw;
+      height: 1vw;
+      position: fixed;
+      left:25vw;
+        transition-delay: 400ms;
+      z-index: 2;
+      transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  
+  }
+  .call1 img{
+      margin-top: -3vw;
+      width:22vw;
+  }
+             
+  .calltext{
+      color:rgb(233, 191, 174);
+      font-size: 2vw;
+  }
+  .ph_checkbox2:checked~.call2{
+    display:block;
+      animation: fade_in_show 2s;
+              opacity: 1;
+  }
+  .call2{
+      display: none;
+      position: fixed;
+      text-align: center;
+      z-index:11;
+      border:8px solid rgb(233, 191, 174);
+    left:34vw;   
+    color:rgb(233, 191, 174);
+    justify-content: center;
+    font-size: 1vw;
+    border-radius: 2vw;
+    text-align: center;
+    margin-top: -5vw;
+   width: 30vw;  
+}
+#emailAddress{
+border-radius: 1vw;
+text-align: center;
+border:3px solid rgb(233, 191, 174);
+height: 5vw;
+
+width:25vw;
+}
+#message{
+
+margin-bottom: 2vw;
+border-radius: 1vw;
+border:3px solid rgb(233, 191, 174);
+height: 7vw;
+text-align: center;
+width:25vw;
+}
+.phone123
+.cl{
+right: 5vw;
+}
+.cl1{
+right: 12vw;
+}
+.emailBox{
+      
+    margin-top:2vw;   
+
+
+ font-size: 1vw;
+ text-align: center;
+ 
+}
+.messageBox{  
+    font-size: 1vw;
+    text-align: center;
+}
+.sb1{
+    width:8vw;
+    height: 2vw;
+    border-color: rgb(233, 191, 174);
+    background: rgb(233, 191, 174);
+    color:#696647;
+    margin-bottom:2vw;
+}
+.sb1:hover{
+    border-color: #696647;
+    background: #696647;
+    color:rgb(233, 191, 174);
+}
 @media(max-width: 700px){
+    .sub{
+        margin-top: 2vw;
+        margin-right:0vw ;
+    }
+   .call1 img{
+       margin-top: -3vw;
+       width:50vw;
+   }
+   .call1{
+       font-size:3vw;
+       left:3vw;
+   }
+  .calltext{
+      font-size:4vw;
+  }
+   .phone123{
+       left:85vw;
+    top:16px;
+
+   }
+   
+   .b{
+       top:110px;
+       
+           
+     }
+     .b1{
+         top:200px;
+     }
+     .call2{
+       display: none;
+       position: fixed;
+       text-align: center;
+       z-index:11;
+       border:4px solid rgb(233, 191, 174);
+     left:12vw;   
+     color:rgb(233, 191, 174);
+     justify-content: center;
+     font-size: 1vw;
+     border-radius: 2vw;
+     text-align: center;
+     margin-top: -5vw;
+    width: 70vw;  
+ }
+#emailAddress{
+ border-radius: 1vw;
+ text-align: center;
+ border:3px solid rgb(233, 191, 174);
+ height: 7vw;
+
+ width:50vw;
+}
+#message{
+
+ margin-bottom: 2vw;
+ border-radius: 1vw;
+ border:3px solid rgb(233, 191, 174);
+ height: 15vw;
+ text-align: center;
+ width:50vw;
+}
+ .emailBox{
+       
+     margin-top:2vw;   
+
+
+  font-size: 3vw;
+  text-align: center;
+  
+ }
+ .messageBox{  
+     font-size: 3vw;
+     text-align: center;
+ }
+.sb1{
+   font-size: 2vw;
+   width:25vw;
+   height: 5vw;
+}
+.ic{
+   padding-top: 3vw;
+}
+.ic1{
+   padding-top: 2vw;
+}
     .di{
         display: none;
     } 
@@ -473,14 +852,15 @@ padding-bottom: 20px;
         width: 100vw;
     }
     .menu .logo{
-        font-size: 6vw;
+        position: relative;
+        left: -8vw;
     }
+    #re{
+        font-size: 7vw;
+   }
     .howToBuy{
         padding-top: 12vh;
         background-color: rgb(116, 106, 87);
-    }
-    .howToBuy .head{
-     
     }
 .bank1{
     height: 60vmax;
