@@ -390,7 +390,7 @@
     border: 0;
 }
 .modal-title{
-    margin-left: 110px;
+    margin-left: 15vw;
 }
 
 .footer{
@@ -476,13 +476,13 @@ padding-bottom: 20px;
         font-size: 6vw;
     }
 .bank1{
-    height: 60vmin;
+    height: 60vmax;
 }
 .banks #row1{
     font-size: 15px;
 }
 #modalBtn{
-    height: 8vh;
+    height: 55px;
     font-size: 18px;
     margin-top: 0vh;
     
