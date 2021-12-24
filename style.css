@@ -249,7 +249,7 @@
   }
 .howToBuy{
     width: 100%;
-    
+    background-color: rgb(116, 106, 87)
 }
 .howToBuy .head{
   width: 100%;
@@ -474,6 +474,13 @@ padding-bottom: 20px;
     }
     .menu .logo{
         font-size: 6vw;
+    }
+    .howToBuy{
+        padding-top: 12vh;
+        background-color: rgb(116, 106, 87);
+    }
+    .howToBuy .head{
+     
     }
 .bank1{
     height: 60vmax;
