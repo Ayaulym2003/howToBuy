@@ -728,6 +728,10 @@ right: 12vw;
     color:rgb(233, 191, 174);
 }
 @media(max-width: 700px){
+    .phIcon1{
+        margin-top: 10px;
+        margin-left: -2vw;
+     }
     .sub{
         margin-top: 2vw;
         margin-right:0vw ;
