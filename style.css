@@ -394,6 +394,7 @@
 }
 
 .footer{
+    position: relative;
     width:100%;
     height: 500px;
     background-color:rgb(39, 34, 33);
@@ -403,7 +404,7 @@
     padding-top: 70px;
     padding-left: 75px;
 
-   width: 550px;
+   width: 700px;
 }
 .footer h2{
 color: rgb(224, 224, 224);
@@ -422,7 +423,6 @@ padding-bottom: 20px;
     padding-top: 50px;
 }
 .footer h1{
-    text-align: left;
     color:rgb(221, 180, 180);
     font-size: 14px;
 }
@@ -430,6 +430,7 @@ padding-bottom: 20px;
     color:rgb(116, 106, 87);
     font-size: 10px;
 }
+
 
 
 @media(max-width: 700px){
@@ -481,19 +482,33 @@ padding-bottom: 20px;
     font-size: 15px;
 }
 #modalBtn{
-    height: 55px;
+    height: 8vh;
     font-size: 18px;
     margin-top: 0vh;
     
 }
 .footer{
     height: 50vh;
+   
+}
+.footer h1{
+    font-size: 2vw;
+}
+.footer h3{
+    font-size: 2vw;
+}
+.footer h2{
+    font-size: 2vw;
+}
+.footer h4{
+    font-size: 2vw;
 }
 .footer >div{
     padding-left: 20px;
-    font-size: 3vw;
+    
 }
 #rp{
+     font-size: 1.7vw;
     padding-right: 20px;
 }
 }
